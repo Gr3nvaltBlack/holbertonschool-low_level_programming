@@ -13,6 +13,7 @@ int main(void)
 printf("size of char in bytes: %zu\n", sizeof(char));
 printf("size of int in bytes: %zu\n", sizeof(int));
 printf("size of long int in bytes: %zu\n", sizeof(long int));
+printf("size of long long int in bytes: %zu\n", sizeof(long long int));
 printf("size of float in bytes: %zu\n", sizeof(float));
 return (0);
 }
