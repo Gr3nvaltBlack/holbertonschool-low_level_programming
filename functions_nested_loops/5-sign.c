@@ -2,7 +2,7 @@
 
 /**
  *print_sign - Entry Point
- * n - This function prints the alphabet in lowercase
+ * @n: This function prints the sign of a number
  *Return: Always 0 (Sucess)
  */
 int print_sign(int n)
