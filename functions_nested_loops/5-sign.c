@@ -2,7 +2,7 @@
 
 /**
  *print_sign - Entry Point
- * int n - This function prints the alphabet in lowercase
+ * n - This function prints the alphabet in lowercase
  *Return: Always 0 (Sucess)
  */
 int print_sign(int n)
@@ -17,7 +17,7 @@ else if (n == 0)
 _putchar('0');
 return (0);
 }
- else
+else
 {
 _putchar('-');
 return (-1);
