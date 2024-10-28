@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - Entry Point
- * c -  This function prints the alphabet in lowercase
+ * @c: character to be verified
  * Return: Always 0 (Sucess)
  */
 int _isalpha(int c)
