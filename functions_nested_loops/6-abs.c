@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * _abs - Entry Point
- * @n: the absolute value of an integer
+ * _abs - Prints the absolute value of a number
+ * @i: Number targeted
  *Return: Always 0 (Sucess)
  */
-int _abs(int)
+int _abs(int i)
 {
-	int n;
-	if (n > 0)
-		return (n);
-	else if (n < 0)
-		return (-n);
+
+	if (i > 0)
+		return (i);
+	else if (i < 0)
+		return (-i);
 	else
 		return (0);
 }
