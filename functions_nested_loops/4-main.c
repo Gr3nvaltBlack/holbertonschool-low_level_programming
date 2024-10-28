@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h> // Inclure pour utiliser printf pour tester les résultats
+#include <stdio.h>
 
 /**
  * main - check the code
