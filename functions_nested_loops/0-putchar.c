@@ -1,12 +1,18 @@
-#include <unistd.h>
-
+#include <stdio.h>
+#include "main.h"
 /**
-*main - Entry Point
-*
-*Return: Always 0 (Sucess)
-*/
+ *main - Entry Point
+ *
+ *Return: Always 0 (Sucess)
+ */
 int main(void)
 {
-write(1, "_putchar\n", 9);
+char n[] = "_putchar";
+int i;
+for (i = 0; n[i] != '\0'; i++)
+{
+_putchar(n[i]);
+}
+_putchar('\n');
 return (0);
 }
