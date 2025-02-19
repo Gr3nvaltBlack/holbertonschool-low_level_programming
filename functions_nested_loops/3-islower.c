@@ -2,8 +2,8 @@
 
 /**
  * _islower - check the code.
- * c - variable that runs through a loop
- * Return: Always 0.
+ * @c: The character to check
+ * Return: (1) if c is lowercase, (0) if otherwise
  */
 int _islower(int c)
 {
