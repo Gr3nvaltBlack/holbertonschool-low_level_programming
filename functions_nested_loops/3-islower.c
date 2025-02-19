@@ -2,7 +2,7 @@
 
 /**
  * _islower - check the code.
- *
+ * c - variable that runs through a loop
  * Return: Always 0.
  */
 int _islower(int c)
