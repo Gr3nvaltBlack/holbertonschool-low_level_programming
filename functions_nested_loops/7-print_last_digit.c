@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * last_digit - check the code
+ * print_last_digit - check the code
  * @n: fuction that prints a numbers
  * Return: Always 0 (Succes)
  */
