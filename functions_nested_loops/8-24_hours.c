@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * times_table -  check the code
+ * jack_bauer -  check the code
  *
  *
  * Return: Always 0 (Succes).
  */
-void times_table(void)
+void jack_bauer(void)
 {
 	int heure = 0;
 	int minute = 0;
