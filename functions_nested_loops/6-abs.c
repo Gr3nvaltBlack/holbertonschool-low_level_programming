@@ -6,12 +6,18 @@
  */
 int _abs(int i)
 {
-int n = _abs(i);
+i = _abs(i);
 if (i > 0)
-_putchar(n);
+{
+_putchar(i);
+}
 else if (i < 0)
-_putchar(n);
+{
+_putchar(i);
+}
 else
-_putchar(n);
+{
+_putchar(i);
+}
 return (0);
 }
