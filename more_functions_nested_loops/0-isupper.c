@@ -1,9 +1,11 @@
 #include "main.h"
+#include <stdio.h>
+
 
 /**
- * _isupper - checks for uppercase character
- * @c: The character to be checked
- * Return: Always 0.
+ *_isupper - checks for uppercase character
+ *@c: variable that counts capital letters
+ *Return: Always 0 (Succes)
  */
 int _isupper(int c)
 {

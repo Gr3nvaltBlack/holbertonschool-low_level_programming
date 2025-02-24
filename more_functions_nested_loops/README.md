@@ -1,1 +1,1 @@
-fortne, gloire & povoir
+C - More functions, more nested loops
