@@ -1,33 +1,36 @@
 #include "main.h"
 
 /**
- * cap_string - function that capitalizes all words of a string
- * @s: pointer to the first character of the array
- * Return: s char
+ * cap_string - Capitalizes all words of a string.
+ * @str: The string to be modified.
+ *
+ * Return: A pointer to the modified string.
  */
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-	int i = 0, j;
-	int new_word = 1;
+	int i;
+	int capitalize_next = 1; /* Flag to indicate when to capitalize */
 
-	char separators[] = " \t\n,;.!?\"(){}";
-
-	while (s[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (new_word && s[i] >= 'a' && s[i] <= 'z')
+		/* Check if the character is a separator */
+		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
+				str[i] == ',' || str[i] == ';' || str[i] == '.' ||
+				str[i] == '!' || str[i] == '?' || str[i] == '"' ||
+				str[i] == '(' || str[i] == ')' || str[i] == '{' ||
+				str[i] == '}')
 		{
-			s[i] = s[i] - 32;
-			new_word = 0;
+			capitalize_next = 1; /* Set flag to capitalize next character */
 		}
-		for (j = 0; separators[j] != '\0'; j++)
+		else if (capitalize_next && str[i] >= 'a' && str[i] <= 'z')
 		{
-			if (s[i] == separators[j])
-			{
-				new_word = 1;
-				break;
-			}
+			str[i] = str[i] - ('a' - 'A'); /* Capitalize the letter */
+			capitalize_next = 0; /* Reset flag after capitalization */
 		}
-		i++;
+		else
+		{
+			capitalize_next = 0; /* Reset flag if not a separator */
+		}
 	}
-	return (s);
+	return (str);
 }
